@@ -57,13 +57,13 @@ namespace Hellow
     public class Coffee {
         public static async Task<Coffee> PourCoffee() {
             
-            var coffee = await new Coffee();
+            var coffee = /*await*/ new Coffee();
             return coffee;
         }
 
-        public async Coffee() {
-            System.Threading.Thread.Sleep(1000);
-        }
+        // public async Coffee() {
+        //     System.Threading.Thread.Sleep(1000);
+        // }
     }
 
     public class Toast {
